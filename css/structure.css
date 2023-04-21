@@ -1,0 +1,75 @@
+body{
+    background: linear-gradient( -45deg ,#aa4b6b, #6b6b83, #3b8d99);
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: gradient 15s ease infinite;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+h1{
+    background: linear-gradient(#000000, #434343);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 75px;
+    cursor: default;
+    padding: 60px;
+    border: 3px solid;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.425);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hello-js{
+    display: flex;
+    justify-content: center;
+    top: -25px;
+    position: relative;
+}
+
+button{
+    cursor: pointer;
+    background: linear-gradient( -45deg ,#aa4b6b, #6b6b83, #3b8d99);
+    background-size: 150% 150%;
+    height: 75px;
+    width: 250px;
+    border-radius: 20px;
+    border: black;
+    box-shadow: 3px 3px 3px 3px rgba(54, 54, 54, 0.548);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+button:hover{
+    transform: translateY(3px) translateX(3px);
+    box-shadow: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+section:hover{
+    animation: rotateY 1s ease-in-out;
+}
+
+@-webkit-keyframes rotateY {
+    to { -webkit-transform: rotateY(360deg); }
+  }
+  @keyframes rotateY {
+    to { transform: rotateY(360deg); }
+  }
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
